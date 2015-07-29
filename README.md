@@ -1,6 +1,7 @@
 # PortScanner
 Scan any TCP port on any host.
 
+
 -i for defining ip address
 -p for defining port
 -p2 for defining range default same as p
@@ -9,7 +10,9 @@ Scan any TCP port on any host.
 
 
  //checks port 56 on localhost
+ 
 -i localhost -p 56  
 
 //checks all ports of localhost and uses pool of 100 threads
+
 -i localhost -p 0 -p2 65535 -t 100
