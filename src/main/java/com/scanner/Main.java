@@ -3,6 +3,7 @@ package com.scanner;
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;import java.lang.String;import java.lang.System;
+import java.net.Socket;
 
 
 /** IPv4
@@ -41,7 +42,7 @@ public class Main {
     }
 
     private void doMain(String[] args) {
-        int d;
+
         CmdLineParser parser = new CmdLineParser(this);
         try {
             parser.parseArgument(args);
@@ -65,8 +66,6 @@ public class Main {
 
         if (ARG_PORT2 == -1)
             ARG_PORT2 = ARG_PORT;
-
-
    //     System.out.print(ARG_IP + " " + ARG_PORT + " " + ARG_PORT2 + " " + ARG_THREADS + " " + ARG_TIMEOUT);
 
         System.out.println("Estimated time left: " + ((ARG_PORT2-ARG_PORT+1)/ARG_THREADS)*(ARG_TIMEOUT/1000) + " sec.");
