@@ -2,6 +2,7 @@
 Scan any TCP port on any host.
 
 -i for defining ip address
+
 -p for defining port
 -p2 for defining range default same as p
 -t number of threads to use for connections   Default 50
