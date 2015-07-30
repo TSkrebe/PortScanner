@@ -60,11 +60,8 @@ public class CheckPorts {
                 }
 
             }
-
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
+        } catch (InterruptedException | ExecutionException e) {
+            System.out.println("Ooops!!! An error occurred while ");
         }
 
         System.out.println(all + " open port(s) in total.");
