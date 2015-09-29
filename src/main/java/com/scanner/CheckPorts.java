@@ -22,7 +22,7 @@ public class CheckPorts {
     private final int port2;
     private final int threads;
     private final int timeout;
-
+    
     public CheckPorts(String ip, int port1, int port2, int threads, int timeout) {
         this.ip = ip;
         this.port1 = port1;
